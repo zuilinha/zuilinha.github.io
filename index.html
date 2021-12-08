@@ -98,15 +98,15 @@
     function writeData() {
         firebase.database().ref("User").set({
     name: document.getElementByID("nameField").value,
-    age: document.getElementByID("ageField").value,
-    })
+    age: document.getElementByID("ageField").value
+    });
     }
     
     
         </script>
         <h1>User Database </h1>
-        <input type = "text" placeholder "name" id = "nameField">
-        <input type = "text" placeholder "age" id = "ageField">
+        <input type = "text" placeholder = "name" id = "nameField">
+        <input type = "text" placeholder = "age" id = "ageField">
         <button onclick = "writeData()">Submit</button>
         
         
