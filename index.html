@@ -97,27 +97,20 @@
     measurementId: "${config.measurementId}"
   };
 
-  // Initialize Firebase
+
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
     
-        function writeData() {
-        firebase.database().ref("User").set({
-    name: document.getElementByID("nameField").value,
-    age: document.getElementByID("ageField").value
-    });
-    }
+//        function writeData() {
+//        firebase.database().ref("User").set({
+//    name: document.getElementByID("nameField").value,
+//    age: document.getElementByID("ageField").value
+//    });
+//    }
 
     
 </script>
-  
 
-        <h1>User Database </h1>
-        <input type = "text" placeholder = "name" id = "nameField">
-        <input type = "text" placeholder = "age" id = "ageField">
-        <button onclick = "writeData()">Submit</button>
-        
-        
     </body>
 </html>
 
